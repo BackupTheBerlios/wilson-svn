@@ -7,7 +7,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 import ch.netlogix.wilson.core.BaseController;
-import ch.netlogix.wilson.core.data.db.AbstractDatabaseController;
+import ch.netlogix.wilson.core.base.db.AbstractDatabaseController;
 
 public class ClientController extends AbstractDatabaseController {
 
