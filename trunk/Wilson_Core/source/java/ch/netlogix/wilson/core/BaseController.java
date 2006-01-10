@@ -3,8 +3,10 @@
  */
 package ch.netlogix.wilson.core;
 
+import java.sql.Connection;
 import java.util.ArrayList;
 
+import ch.netlogix.wilson.core.data.db.IDatabaseController;
 import ch.netlogix.wilson.core.interfaces.IController;
 
 /**
@@ -23,6 +25,9 @@ public class BaseController implements IController {
 	
 	/** Controller registry */
 	private ArrayList controllerRegistry = new ArrayList();
+	
+	/** Database connection */
+	protected Connection connection = null;
 	
 	/**
 	 * Private Constructor
@@ -57,6 +62,11 @@ public class BaseController implements IController {
 	 * @return true if everything was ok and the controller was registered
 	 */
 	public boolean registerController(IController controller){
+		System.out.println("Registered new client controller: " + controller);
+		if(controller instanceof IDatabaseController){
+			this.connection = ((IDatabaseController) controller).getConnection();
+			System.out.println("Database connection established: " + this.connection);
+		}
 		return this.controllerRegistry.add(controller);
 	}
 	
