@@ -32,13 +32,10 @@ public class CorePlugin extends AbstractUIPlugin {
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
 		
-		// Load BaseController
-		new BaseController();
-		
 		// Startup base controller
 		BaseController.getInstance().startup();
 	}
-
+	
 	/**
 	 * This method is called when the plug-in is stopped
 	 */

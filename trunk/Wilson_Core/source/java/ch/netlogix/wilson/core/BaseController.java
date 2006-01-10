@@ -6,6 +6,8 @@ package ch.netlogix.wilson.core;
 import java.sql.Connection;
 import java.util.ArrayList;
 
+import org.eclipse.jface.action.IStatusLineManager;
+
 import ch.netlogix.wilson.core.base.interfaces.IDatabaseController;
 import ch.netlogix.wilson.core.interfaces.IController;
 
@@ -27,7 +29,10 @@ public class BaseController implements IController {
 	private ArrayList controllerRegistry = new ArrayList();
 	
 	/** Database connection */
-	protected Connection connection = null;
+	private Connection connection = null;
+
+	/** Status line manager */
+	private IStatusLineManager statusLineManager = null;
 	
 	/**
 	 * Private Constructor
@@ -41,6 +46,9 @@ public class BaseController implements IController {
 	 * @return BaseController instance
 	 */
 	public static BaseController getInstance(){
+		if(BaseController.instance == null){
+			BaseController.instance = new BaseController();
+		}
 		return BaseController.instance;
 	}
 	
@@ -49,8 +57,6 @@ public class BaseController implements IController {
 	 * @see ch.netlogix.wilson.core.interfaces.IController#startup()
 	 */
 	public void startup(){
-		
-		System.out.println("BaseController init...");
 		
 	}
 	
@@ -95,5 +101,21 @@ public class BaseController implements IController {
 	 */
 	public void notify(int event) {
 		
+	}
+	
+	/**
+	 * Set the status line manager
+	 * @param manager
+	 */
+	public void setStatusLineManager(IStatusLineManager manager){
+		this.statusLineManager = manager;
+	}
+	
+	/**
+	 * Get the status line manage
+	 * @return IStatusLineManager
+	 */
+	public IStatusLineManager getStatusLineManager(){
+		return this.statusLineManager;
 	}
 }
