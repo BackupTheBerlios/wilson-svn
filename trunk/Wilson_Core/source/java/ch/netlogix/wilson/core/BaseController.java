@@ -8,8 +8,8 @@ import java.util.ArrayList;
 
 import org.eclipse.jface.action.IStatusLineManager;
 
+import ch.netlogix.wilson.core.base.interfaces.IController;
 import ch.netlogix.wilson.core.base.interfaces.IDatabaseController;
-import ch.netlogix.wilson.core.interfaces.IController;
 
 /**
  * This class handles all events as centralized class, it
@@ -54,7 +54,7 @@ public class BaseController implements IController {
 	
 	/**
 	 * (non-Javadoc)
-	 * @see ch.netlogix.wilson.core.interfaces.IController#startup()
+	 * @see ch.netlogix.wilson.core.base.interfaces.IController#startup()
 	 */
 	public void startup(){
 		
@@ -89,7 +89,7 @@ public class BaseController implements IController {
 
 	/**
 	 * (non-Javadoc)
-	 * @see ch.netlogix.wilson.core.interfaces.IController#shutdown()
+	 * @see ch.netlogix.wilson.core.base.interfaces.IController#shutdown()
 	 */
 	public void shutdown() {
 		
@@ -97,7 +97,7 @@ public class BaseController implements IController {
 
 	/**
 	 * (non-Javadoc)
-	 * @see ch.netlogix.wilson.core.interfaces.IController#notify(int)
+	 * @see ch.netlogix.wilson.core.base.interfaces.IController#notify(int)
 	 */
 	public void notify(int event) {
 		

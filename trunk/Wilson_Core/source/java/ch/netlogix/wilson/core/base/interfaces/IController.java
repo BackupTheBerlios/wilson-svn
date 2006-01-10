@@ -1,7 +1,7 @@
 /**
  * @(#) IController.java
  */
-package ch.netlogix.wilson.core.interfaces;
+package ch.netlogix.wilson.core.base.interfaces;
 
 /**
  * IController interface

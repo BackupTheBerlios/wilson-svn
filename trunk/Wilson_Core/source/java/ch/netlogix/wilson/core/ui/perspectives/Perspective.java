@@ -8,6 +8,8 @@ import ch.netlogix.wilson.core.BaseController;
 public class Perspective implements IPerspectiveFactory {
 
 	public void createInitialLayout(IPageLayout layout) {
+		
 		BaseController.getInstance().getStatusLineManager().setMessage("Ready");
+		
 	}
 }
