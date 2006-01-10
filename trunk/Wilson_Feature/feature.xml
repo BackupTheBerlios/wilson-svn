@@ -17,14 +17,30 @@
       [Enter License Description here.]
    </license>
 
+   <includes
+         id="org.eclipse.rcp"
+         version="0.0.0"/>
+
    <requires>
       <import plugin="org.eclipse.ui"/>
       <import plugin="org.eclipse.core.runtime"/>
-      <import plugin="ch.netlogix.wilson.common"/>
    </requires>
 
    <plugin
          id="ch.netlogix.wilson.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="ch.netlogix.wilson.common"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="ch.netlogix.wilson.db"
          download-size="0"
          install-size="0"
          version="0.0.0"
