@@ -6,7 +6,7 @@ package ch.netlogix.wilson.core;
 import java.sql.Connection;
 import java.util.ArrayList;
 
-import ch.netlogix.wilson.core.base.db.IDatabaseController;
+import ch.netlogix.wilson.core.base.interfaces.IDatabaseController;
 import ch.netlogix.wilson.core.interfaces.IController;
 
 /**

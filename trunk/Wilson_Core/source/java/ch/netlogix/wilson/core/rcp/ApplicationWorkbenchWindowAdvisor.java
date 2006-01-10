@@ -21,6 +21,8 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
         configurer.setInitialSize(new Point(800, 600));
         configurer.setShowCoolBar(false);
         configurer.setShowStatusLine(false);
+        configurer.setShowStatusLine(true);
         configurer.setTitle("Codename Wilson");
+        
     }
 }

@@ -5,6 +5,8 @@ package ch.netlogix.wilson.core.base.db;
 
 import java.sql.Connection;
 
+import ch.netlogix.wilson.core.base.interfaces.IDatabaseController;
+
 
 public abstract class AbstractDatabaseController implements IDatabaseController {
 

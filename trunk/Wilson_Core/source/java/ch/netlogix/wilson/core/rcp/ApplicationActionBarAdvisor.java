@@ -9,12 +9,14 @@ public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
 
     public ApplicationActionBarAdvisor(IActionBarConfigurer configurer) {
         super(configurer);
+        //configurer.getStatusLineManager().setMessage("Ready");
     }
 
     protected void makeActions(IWorkbenchWindow window) {
     }
 
     protected void fillMenuBar(IMenuManager menuBar) {
+    	
     }
     
 }
