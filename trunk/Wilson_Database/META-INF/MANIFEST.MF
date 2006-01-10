@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Wilson Database Plug-in
+Bundle-SymbolicName: ch.netlogix.wilson.db
+Bundle-Version: 1.0.0
+Bundle-Activator: ch.netlogix.wilson.db.DbPlugin
+Bundle-Vendor: netlogix.ch
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime
+Eclipse-AutoStart: true
