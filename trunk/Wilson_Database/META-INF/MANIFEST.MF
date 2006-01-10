@@ -7,5 +7,6 @@ Bundle-Activator: ch.netlogix.wilson.db.DbPlugin
 Bundle-Vendor: netlogix.ch
 Bundle-Localization: plugin
 Require-Bundle: org.eclipse.ui,
- org.eclipse.core.runtime
+ org.eclipse.core.runtime,
+ ch.netlogix.wilson.core
 Eclipse-AutoStart: true
