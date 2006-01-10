@@ -1,7 +1,7 @@
 /**
  * @(#) IDatabaseController.java
  */
-package ch.netlogix.wilson.core.data.db;
+package ch.netlogix.wilson.core.base.db;
 
 import java.sql.Connection;
 

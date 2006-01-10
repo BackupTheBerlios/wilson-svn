@@ -5,7 +5,7 @@ package ch.netlogix.wilson.core.data;
 
 import java.util.ArrayList;
 
-import ch.netlogix.wilson.core.data.interfaces.IResource;
+import ch.netlogix.wilson.core.base.interfaces.IResource;
 
 /**
  * Resource class
@@ -67,7 +67,7 @@ public class Resource implements IResource {
     
     /**
      * (non-Javadoc)
-     * @see ch.netlogix.wilson.core.data.interfaces.IResource#getType()
+     * @see ch.netlogix.wilson.core.base.interfaces.IResource#getType()
      */
     public int getType(){
         return this.type;

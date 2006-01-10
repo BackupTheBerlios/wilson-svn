@@ -1,7 +1,7 @@
 /**
  * @(#) IResource.java
  */
-package ch.netlogix.wilson.core.data.interfaces;
+package ch.netlogix.wilson.core.base.interfaces;
 
 /**
  * IResource interface

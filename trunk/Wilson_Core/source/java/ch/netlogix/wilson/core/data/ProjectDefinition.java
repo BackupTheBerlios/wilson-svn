@@ -5,7 +5,7 @@ package ch.netlogix.wilson.core.data;
 
 import java.util.ArrayList;
 
-import ch.netlogix.wilson.core.data.interfaces.IResource;
+import ch.netlogix.wilson.core.base.interfaces.IResource;
 
 /**
  * IResource interface
@@ -154,7 +154,7 @@ public class ProjectDefinition implements IResource {
     
     /**
      * (non-Javadoc)
-     * @see ch.netlogix.wilson.core.data.interfaces.IResource#getType()
+     * @see ch.netlogix.wilson.core.base.interfaces.IResource#getType()
      */
     public int getType(){
         return 0;
@@ -162,7 +162,7 @@ public class ProjectDefinition implements IResource {
 
     /**
      * (non-Javadoc)
-     * @see ch.netlogix.wilson.core.data.interfaces.IResource#setMinimumOccurences(int)
+     * @see ch.netlogix.wilson.core.base.interfaces.IResource#setMinimumOccurences(int)
      */
     public void setMinimumOccurences(int min) {
         // Nothing to do
@@ -170,7 +170,7 @@ public class ProjectDefinition implements IResource {
 
     /**
      * (non-Javadoc)
-     * @see ch.netlogix.wilson.core.data.interfaces.IResource#setMaximumOccurences(int)
+     * @see ch.netlogix.wilson.core.base.interfaces.IResource#setMaximumOccurences(int)
      */
     public void setMaximumOccurences(int max) {
         // Nothing to do
@@ -179,7 +179,7 @@ public class ProjectDefinition implements IResource {
 
     /**
      * (non-Javadoc)
-     * @see ch.netlogix.wilson.core.data.interfaces.IResource#setType(int)
+     * @see ch.netlogix.wilson.core.base.interfaces.IResource#setType(int)
      */
     public void setType(int type) {
         // Nothing to do
