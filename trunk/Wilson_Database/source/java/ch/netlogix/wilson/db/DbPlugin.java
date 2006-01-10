@@ -1,5 +1,6 @@
 package ch.netlogix.wilson.db;
 
+import org.eclipse.ui.IStartup;
 import org.eclipse.ui.plugin.*;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.osgi.framework.BundleContext;
@@ -7,7 +8,7 @@ import org.osgi.framework.BundleContext;
 /**
  * The main plugin class to be used in the desktop.
  */
-public class DbPlugin extends AbstractUIPlugin {
+public class DbPlugin extends AbstractUIPlugin implements IStartup {
 
 	//The shared instance.
 	private static DbPlugin plugin;
@@ -24,6 +25,10 @@ public class DbPlugin extends AbstractUIPlugin {
 	 */
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
+
+		// Start controller
+		new ClientController();
+		ClientController.getInstance().startup();
 	}
 
 	/**
@@ -31,6 +36,10 @@ public class DbPlugin extends AbstractUIPlugin {
 	 */
 	public void stop(BundleContext context) throws Exception {
 		super.stop(context);
+		
+		// Shutdown controller
+		ClientController.getInstance().shutdown();
+		
 		plugin = null;
 	}
 
@@ -50,5 +59,12 @@ public class DbPlugin extends AbstractUIPlugin {
 	 */
 	public static ImageDescriptor getImageDescriptor(String path) {
 		return AbstractUIPlugin.imageDescriptorFromPlugin("ch.netlogix.wilson.db", path);
+	}
+
+	/* (non-Javadoc)
+	 * @see org.eclipse.ui.IStartup#earlyStartup()
+	 */
+	public void earlyStartup() {
+		
 	}
 }
