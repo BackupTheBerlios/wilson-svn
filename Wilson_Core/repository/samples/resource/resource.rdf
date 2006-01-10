@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<rdf:RDF
+	xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+  	xmlns:res='http://www.abraxas.ch/xmlns/resource/1.0#'
+  	>
+
+  	<rdf:Description>
+    	<res:Title>Weapon</res:Title>
+    	<res:Label>${name}</res:Label>
+    	<res:Category>wow/item</res:Category>
+    	<res:Extends>wow/item</res:Extends>
+    	<res:Attribute>
+			<rdf:Description>
+				<res:AttributeName>name</res:AttributeName>
+				<res:AttributeType>String</res:AttributeType>
+			</rdf:Description>
+    	</res:Attribute>
+    	<res:Attribute>
+			<rdf:Description>
+				<res:AttributeName>level</res:AttributeName>
+				<res:AttributeType>Integer</res:AttributeType>
+			</rdf:Description>
+    	</res:Attribute>
+    	<res:Attribute>
+			<rdf:Description>
+				<res:AttributeName>class</res:AttributeName>
+				<res:AttributeType>String</res:AttributeType>
+			</rdf:Description>
+    	</res:Attribute>
+    	<!--
+    		Armor
+    		Weapon
+    		Recipe
+    		Trade Goods
+    		Reagent
+    		Quiver
+    		Projectile
+    		Miscellaneous
+    		Key
+	    	Jewelry
+	    	Container
+    	-->
+    	<res:Attribute>
+			<rdf:Description>
+				<res:AttributeName>subclass</res:AttributeName>
+				<res:AttributeType>String</res:AttributeType>
+			</rdf:Description>
+    	</res:Attribute>
+  	</rdf:Description>
+  	
+</rdf:RDF>

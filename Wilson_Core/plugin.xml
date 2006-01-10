@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="ch.netlogix.wilson.core.rcp.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="Wilson"
+            class="ch.netlogix.wilson.core.ui.perspectives.Perspective"
+            id="ch.netlogix.wilson.core.ui.perspectives.perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="ch.netlogix.wilson.core.application"
+            name="Codename Wilson"/>
+   </extension>
+
+</plugin>
