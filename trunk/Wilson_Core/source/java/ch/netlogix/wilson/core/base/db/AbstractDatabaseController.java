@@ -7,7 +7,15 @@ import java.sql.Connection;
 
 import ch.netlogix.wilson.core.base.interfaces.IDatabaseController;
 
-
+/**
+ * This is a abstract implementation of the IDatabaseController
+ * interface for use in plugins which provides datasources like
+ * <code>ch.netlogix.wilson.db</code>
+ * 
+ * @author Roger Dudler <roger.dudler@gmail.com>
+ * @version $Id$
+ * @since 1.0.0
+ */
 public abstract class AbstractDatabaseController implements IDatabaseController {
 
 	/** BaseController singleton instance */

@@ -3,6 +3,14 @@
  */
 package ch.netlogix.wilson.core.base.db;
 
+/**
+ * This class contains database field type constants for
+ * use in database access sequences
+ * 
+ * @author Roger Dudler <roger.dudler@gmail.com>
+ * @version $Id$
+ * @since 1.0.0
+ */
 public class FieldTypes {
 	
 	/** DB Field types */

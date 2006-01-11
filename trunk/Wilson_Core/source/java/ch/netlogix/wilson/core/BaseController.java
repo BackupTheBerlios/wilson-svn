@@ -15,7 +15,7 @@ import ch.netlogix.wilson.core.base.interfaces.IDatabaseController;
  * to register themselves to this BaseController class
  * 
  * @author Roger Dudler <roger.dudler@gmail.com>
- * @version $Id: BaseController.java 19 2006-01-10 13:26:40Z rdudler $
+ * @version $Id$
  * @since 1.0.0
  */
 public class BaseController implements IController {

@@ -20,7 +20,7 @@ public class ContainerExplorerView extends ViewPart {
 		
 		this.viewer = new TreeViewer(parent, SWT.NONE);
 		
-		getViewSite().getActionBars().getStatusLineManager().setMessage("Container Tree loaded");
+		getViewSite().getActionBars().getStatusLineManager().setMessage("Ready");
 
 	}
 
