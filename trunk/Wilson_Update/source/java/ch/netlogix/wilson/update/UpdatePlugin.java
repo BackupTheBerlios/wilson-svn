@@ -26,7 +26,7 @@ public class UpdatePlugin extends AbstractUIPlugin implements IStartup {
 	 */
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
-		System.out.println(Platform.getBundle("ch.netlogix.wilson.update").getLocation());
+		System.out.println("asdfa" + Platform.getBundle("ch.netlogix.wilson.update").getLocation());
 	}
 
 	/**
