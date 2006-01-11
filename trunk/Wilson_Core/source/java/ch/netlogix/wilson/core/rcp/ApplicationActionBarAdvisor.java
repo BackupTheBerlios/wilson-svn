@@ -5,13 +5,10 @@ import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.application.ActionBarAdvisor;
 import org.eclipse.ui.application.IActionBarConfigurer;
 
-import ch.netlogix.wilson.core.BaseController;
-
 public class ApplicationActionBarAdvisor extends ActionBarAdvisor {
 
     public ApplicationActionBarAdvisor(IActionBarConfigurer configurer) {
         super(configurer);
-        BaseController.getInstance().setStatusLineManager(configurer.getStatusLineManager());
     }
 
     protected void makeActions(IWorkbenchWindow window) {

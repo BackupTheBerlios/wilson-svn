@@ -30,9 +30,9 @@
     	</prj:Resource>
     	<prj:Resource>
     		<rdf:Description>
-    			<res:Title>Maps</res:Title>
+    			<res:Title>Players</res:Title>
     			<res:Type>1</res:Type>
-    			<res:Min>0</res:Min>
+    			<res:Min>1</res:Min>
     			<res:Max>1</res:Max>
     			<res:Resource>
     				<rdf:Description>

@@ -26,5 +26,12 @@
             application="ch.netlogix.wilson.core.application"
             name="Codename Wilson"/>
    </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="ch.netlogix.wilson.core.ui.views.ContainerExplorerView"
+            id="ch.netlogix.wilson.core.ui.views.ContainerExplorer"
+            name="Containers / Projects"/>
+   </extension>
 
 </plugin>
