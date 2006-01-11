@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<rdf:RDF
+	xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
+  	xmlns:srv='http://www.netlogix.ch/xmlns/server/1.0#'
+  	>
+  	
+  	<rdf:Description>
+  		<srv:Server srv:Location="http://netfox.ath.cx/wilson/" srv:Priority="2">Netfox Test-Server</srv:Server> 
+  		<srv:Server srv:Location="http://www.netlogix.ch/wilson/" srv:Priority="0">Netlogix Test-Server (not existing)</srv:Server> 
+  	</rdf:Description>
+  	
+</rdf:RDF>
