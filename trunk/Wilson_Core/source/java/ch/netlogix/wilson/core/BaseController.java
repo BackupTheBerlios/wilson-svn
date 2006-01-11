@@ -81,6 +81,14 @@ public class BaseController implements IController {
 	public boolean unregisterController(IController controller){
 		return this.controllerRegistry.remove(controller);
 	}
+	
+	/**
+	 * Get the database connection
+	 * @return Connection DB Connection object
+	 */
+	public Connection getConnection(){
+		return this.connection;
+	}
 
 	/**
 	 * (non-Javadoc)
