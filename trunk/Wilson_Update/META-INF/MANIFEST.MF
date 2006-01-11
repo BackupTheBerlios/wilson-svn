@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Update Plug-in
-Bundle-SymbolicName: ch.netlogix.wilson.update
+Bundle-SymbolicName: ch.netlogix.wilson.update; singleton:=true
 Bundle-Version: 1.0.0
 Bundle-Activator: ch.netlogix.wilson.update.UpdatePlugin
 Bundle-Vendor: netlogix.ch
