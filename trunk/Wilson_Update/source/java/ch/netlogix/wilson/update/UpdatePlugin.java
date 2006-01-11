@@ -1,13 +1,15 @@
 package ch.netlogix.wilson.update;
 
+import org.eclipse.ui.IStartup;
 import org.eclipse.ui.plugin.*;
+import org.eclipse.core.runtime.Platform;
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.osgi.framework.BundleContext;
 
 /**
  * The main plugin class to be used in the desktop.
  */
-public class UpdatePlugin extends AbstractUIPlugin {
+public class UpdatePlugin extends AbstractUIPlugin implements IStartup {
 
 	//The shared instance.
 	private static UpdatePlugin plugin;
@@ -24,6 +26,7 @@ public class UpdatePlugin extends AbstractUIPlugin {
 	 */
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
+		System.out.println(Platform.getBundle("ch.netlogix.wilson.update").getLocation());
 	}
 
 	/**
@@ -50,5 +53,11 @@ public class UpdatePlugin extends AbstractUIPlugin {
 	 */
 	public static ImageDescriptor getImageDescriptor(String path) {
 		return AbstractUIPlugin.imageDescriptorFromPlugin("ch.netlogix.wilson.update", path);
+	}
+
+	public void earlyStartup() {
+		// TODO Auto-generated method stub
+		System.out.println("alkdsöjfal");
+		
 	}
 }
