@@ -14,5 +14,4 @@ Export-Package: ch.netlogix.wilson.core,
  ch.netlogix.wilson.core.base.db,
  ch.netlogix.wilson.core.base.interfaces,
  ch.netlogix.wilson.core.data,
- ch.netlogix.wilson.core.data.db.tables,
- ch.netlogix.wilson.core.interfaces
+ ch.netlogix.wilson.core.data.db.tables
