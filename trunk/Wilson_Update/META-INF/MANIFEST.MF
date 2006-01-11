@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Update Plug-in
+Bundle-SymbolicName: ch.netlogix.wilson.update
+Bundle-Version: 1.0.0
+Bundle-Activator: ch.netlogix.wilson.update.UpdatePlugin
+Bundle-Vendor: netlogix.ch
+Bundle-Localization: plugin
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ ch.netlogix.wilson.core,
+ ch.netlogix.wilson.common
+Eclipse-AutoStart: true
