@@ -2,11 +2,11 @@
 
 <rdf:RDF
 	xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
-  	xmlns:prj='http://www.abraxas.ch/xmlns/project/1.0#'
-  	xmlns:res='http://www.abraxas.ch/xmlns/resource/1.0#'
-  	xmlns:svc='http://www.abraxas.ch/xmlns/service/1.0#'
-  	xmlns:rule='http://www.abraxas.ch/xmlns/rule/1.0#'
-  	xmlns:role='http://www.abraxas.ch/xmlns/role/1.0#'
+  	xmlns:prj='http://www.netlogix.ch/xmlns/project/1.0#'
+  	xmlns:res='http://www.netlogix.ch/xmlns/resource/1.0#'
+  	xmlns:svc='http://www.netlogix.ch/xmlns/service/1.0#'
+  	xmlns:rule='http://www.netlogix.ch/xmlns/rule/1.0#'
+  	xmlns:role='http://www.netlogix.ch/xmlns/role/1.0#'
   	>
 
   	<rdf:Description>

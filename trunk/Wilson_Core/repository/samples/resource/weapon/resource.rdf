@@ -2,7 +2,7 @@
 
 <rdf:RDF
 	xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'
-  	xmlns:res='http://www.abraxas.ch/xmlns/resource/1.0#'
+  	xmlns:res='http://www.netlogix.ch/xmlns/resource/1.0#'
   	>
 
   	<rdf:Description>
