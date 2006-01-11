@@ -5,6 +5,7 @@ package ch.netlogix.wilson.db;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 import ch.netlogix.wilson.core.BaseController;
 import ch.netlogix.wilson.core.base.db.AbstractDatabaseController;
@@ -36,6 +37,8 @@ public class ClientController extends AbstractDatabaseController {
 	 */
 	public void shutdown() {
 		try {
+			Statement stmt = connection.createStatement();
+			stmt.execute("SHUTDOWN");
 			connection.close();
 		} catch (SQLException e) {
 			e.printStackTrace();
