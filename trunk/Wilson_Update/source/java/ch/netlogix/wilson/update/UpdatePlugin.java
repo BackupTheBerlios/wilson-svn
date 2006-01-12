@@ -1,16 +1,9 @@
 package ch.netlogix.wilson.update;
 
-import java.io.InputStream;
-
-import org.eclipse.ui.IStartup;
-import org.eclipse.ui.plugin.*;
-import org.eclipse.core.runtime.Platform;
 import org.eclipse.jface.resource.ImageDescriptor;
+import org.eclipse.ui.IStartup;
+import org.eclipse.ui.plugin.AbstractUIPlugin;
 import org.osgi.framework.BundleContext;
-
-import com.hp.hpl.jena.rdf.model.Model;
-import com.hp.hpl.jena.rdf.model.ModelFactory;
-import com.hp.hpl.jena.util.FileManager;
 
 /**
  * The main plugin class to be used in the desktop.
@@ -32,6 +25,9 @@ public class UpdatePlugin extends AbstractUIPlugin implements IStartup {
 	 */
 	public void start(BundleContext context) throws Exception {
 		super.start(context);
+		
+		// Startup controller
+		ClientController.getInstance().startup();
 		
 	}
 
