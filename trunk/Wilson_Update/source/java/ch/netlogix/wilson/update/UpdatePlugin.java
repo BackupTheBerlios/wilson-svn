@@ -78,6 +78,5 @@ public class UpdatePlugin extends AbstractUIPlugin implements IStartup {
 	}
 
 	public void earlyStartup() {
-		System.out.println("ölakdjsf");
 	}
 }
