@@ -15,7 +15,6 @@
 	<classpathentry kind="lib" path="concurrent.jar"/>
 	<classpathentry kind="lib" path="icu4j_3_4.jar"/>
 	<classpathentry kind="lib" path="jakarta-oro-2.0.8.jar"/>
-	<classpathentry kind="lib" path="jenatest.jar"/>
 	<classpathentry kind="lib" path="log4j-1.2.12.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
