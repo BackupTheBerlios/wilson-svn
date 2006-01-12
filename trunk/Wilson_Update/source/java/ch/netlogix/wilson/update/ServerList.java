@@ -7,5 +7,8 @@ package ch.netlogix.wilson.update;
  * @version $Id$
  */
 public class ServerList {	
-
+	public ServerList() {
+		
+		
+	}
 }
