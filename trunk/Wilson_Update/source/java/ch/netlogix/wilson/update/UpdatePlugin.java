@@ -27,6 +27,7 @@ public class UpdatePlugin extends AbstractUIPlugin implements IStartup {
 		super.start(context);
 		
 		// Startup controller
+		new ClientController();
 		ClientController.getInstance().startup();
 		
 	}
