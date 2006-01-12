@@ -11,6 +11,7 @@ Require-Bundle: org.eclipse.ui,
  ch.netlogix.wilson.common
 Eclipse-AutoStart: true
 Export-Package: ch.netlogix.wilson.core,
+ ch.netlogix.wilson.core.base,
  ch.netlogix.wilson.core.base.db,
  ch.netlogix.wilson.core.base.interfaces,
  ch.netlogix.wilson.core.data,
